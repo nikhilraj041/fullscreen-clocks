@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://four-time-zones.lovable.app
+**URL**: https://onlineclock.lovable.app/
 
 ## How can I edit this code?
 
