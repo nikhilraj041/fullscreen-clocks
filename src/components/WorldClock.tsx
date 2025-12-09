@@ -54,18 +54,14 @@ export function WorldClock() {
   const getGridClasses = () => {
     switch (clocks.length) {
       case 1:
-        return "grid-cols-1";
+        return "grid-cols-1 grid-rows-1";
       case 2:
-        return "grid-cols-1 md:grid-cols-2";
+        return "grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1";
       case 3:
+        return "grid-cols-1 grid-rows-3 md:grid-cols-2 md:grid-rows-2";
       case 4:
-        return "grid-cols-1 md:grid-cols-2";
+        return "grid-cols-2 grid-rows-2";
     }
-  };
-
-  const getGridRows = () => {
-    if (clocks.length <= 2) return "grid-rows-1 md:grid-rows-1";
-    return "grid-rows-2 md:grid-rows-2";
   };
 
   return (
@@ -73,8 +69,7 @@ export function WorldClock() {
       <div
         className={cn(
           "grid h-full w-full transition-all duration-500",
-          getGridClasses(),
-          getGridRows()
+          getGridClasses()
         )}
       >
         {clocks.map((clock) => (

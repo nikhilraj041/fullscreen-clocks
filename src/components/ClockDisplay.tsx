@@ -19,16 +19,16 @@ export function ClockDisplay({ timezone, size }: ClockDisplayProps) {
       zone: "text-sm md:text-base",
     },
     half: {
-      time: "text-[8vw] md:text-[10vw]",
-      seconds: "text-[2.5vw] md:text-[3vw]",
-      date: "text-base md:text-lg",
+      time: "text-[14vw] md:text-[10vw]",
+      seconds: "text-[4vw] md:text-[3vw]",
+      date: "text-sm md:text-lg",
       zone: "text-xs md:text-sm",
     },
     quarter: {
-      time: "text-[6vw] md:text-[7vw]",
-      seconds: "text-[2vw] md:text-[2.5vw]",
-      date: "text-sm md:text-base",
-      zone: "text-xs",
+      time: "text-[10vw] md:text-[7vw]",
+      seconds: "text-[3vw] md:text-[2.5vw]",
+      date: "text-xs md:text-base",
+      zone: "text-[10px] md:text-xs",
     },
   };
 
